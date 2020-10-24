@@ -2,11 +2,12 @@
 
 namespace rabbitmq_consumer
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      var consumer = new RabbitConsumer();
+      consumer.receive();
     }
+  }
 }
